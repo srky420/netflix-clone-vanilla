@@ -1,18 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 60%;
 }
 
 .banner {
     width: 100%;
-    height: 650px;
-    background: url(../static/banner.jpg), rgba(0, 0, 0, 0.4);
+    height: 700px;
+    background: url(../static/banner.jpg), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) ;
     background-position: center;
     background-blend-mode: overlay;
 }
+
+.logo img {
+    filter: contrast(125%);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    padding: 8px 15px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
 
 .line-break {
     width: 100%;
     height: 10px;
     background-color: grey;
+}
+
+/* Global */
+
+.btn {
+    background-color: rgb(224, 0, 0);
+    color: white;
 }
