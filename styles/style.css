@@ -57,7 +57,7 @@
     background-color: rgb(224, 0, 0);
     color: white;
     border: 0;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .btn:hover {
@@ -95,7 +95,7 @@
 }
 
 .btn-lg {
-    padding: 15px 30px;
+    padding: 15px 25px;
     font-size: 25px;
     margin: 0 5px;
 }
