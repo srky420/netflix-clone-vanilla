@@ -15,7 +15,7 @@
 
 .container {
     margin: auto;
-    width: 60%;
+    width: 65%;
     height: 100%;
 }
 
@@ -93,18 +93,44 @@
 /* Section */
 
 .section {
-    display: grid;
-    grid-template-columns: 55% 45%;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+    text-align: left;
+}
+
+.section-reverse {
+    padding: 5rem 5rem;
+    justify-content: left;
+}
+
+
+/* FAQ Section */
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 5rem 0;
 }
 
-.section-reverse {
-    grid-template-columns: 45% 55%;
-    gap: 1rem;
+.faq-section .heading {
+    align-self: center;
 }
 
+.accordion-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0;
+    background-color: rgb(40, 40, 40);
+}
+
+.accordion-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
 
 /* Global */
 
@@ -121,7 +147,7 @@
 }
 
 .heading {
-    font-size: 52px;
+    font-size: 50px;
     font-family: 'Open Sans', sans-serif;
     margin: 10px;
     filter: drop-shadow(0 1px 1px black);
@@ -144,6 +170,11 @@
     padding: 15px 25px;
     font-size: 25px;
     margin: 0 5px;
+}
+
+.hidden {
+    height: 0;
+    display: none;
 }
 
 /* Media Query */
