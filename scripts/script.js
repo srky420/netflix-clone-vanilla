@@ -18,5 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    
+
+    // Accordions
+
+    var accordions = document.querySelectorAll('.accordion-outer');
+
+    accordions.forEach(accordion => {
+        accordion.addEventListener('click', (e) => {
+            console.log(this.parent);
+        });
+    });
+
 });

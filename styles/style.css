@@ -141,9 +141,15 @@
     padding: 1.5rem;
 }
 
+.accordion-outer:hover {
+    cursor: pointer;
+    background-color: rgb(60, 60, 60);
+}
+
 .accordion-inner {
     background-color: rgb(40, 40, 40);
     padding: 1.5rem;
+    height: fit-content;
 }
 
 /* Global */
