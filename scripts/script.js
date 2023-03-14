@@ -21,11 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Accordions
 
-    var accordions = document.querySelectorAll('.accordion-outer');
+    var accordions = document.querySelectorAll('.accordion');
 
     accordions.forEach(accordion => {
-        accordion.addEventListener('click', (e) => {
-            console.log(this.parent);
+        accordion.querySelector('.accordion-outer').addEventListener('click', (e) => {
+            accordion.querySelector('.accordion-inner').classList.toggle('hidden');
+            console.log(accordion.querySelector('.accordion-inner'));
         });
     });
 
