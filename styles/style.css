@@ -150,10 +150,16 @@
 
 .accordion-inner {
     background-color: rgb(40, 40, 40);
+    padding: 1.5rem;
     height: fit-content;
     max-height: 300px;
-    overflow-y: visible;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+}
+
+.accordion-hidden {
+    max-height: 0;
+    padding: 0 1.5rem;
+    overflow: hidden;
 }
 
 /* Global */
@@ -195,8 +201,7 @@
 }
 
 .hidden {
-    max-height: 0;
-    overflow-y: hidden;
+    display: none;
 }
 
 /* Media Query */

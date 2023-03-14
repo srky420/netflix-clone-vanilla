@@ -7,13 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     text_fields.forEach(text_field => {
 
         text_field.addEventListener('focus', (e) => {
-            console.log(text_field.nextSibling.nextElementSibling);
             text_field.nextSibling.nextElementSibling.classList.add('placeholder-sm');
         });
 
         text_field.addEventListener('focusout', (e) => {
             if (!text_field.value) {
-                console.log(text_field.nextSibling.nextElementSibling);
                 text_field.nextSibling.nextElementSibling.classList.remove('placeholder-sm');
             }
         });
@@ -26,8 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
     accordions.forEach(accordion => {
         accordion.querySelector('.accordion-outer').addEventListener('click', (e) => {
             var inner = accordion.querySelector('.accordion-inner');
-            inner.classList.toggle('hidden');
-            console.log(accordion.querySelector('.accordion-inner'));
+            var svgs = accordion.querySelector('.accordion-outer').querySelectorAll('svg');
+
+            svgs.forEach(svg => {
+                svg.classList.toggle('hidden');
+            });
+
+            inner.classList.toggle('accordion-hidden');
         });
     });
 
