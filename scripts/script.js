@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     accordions.forEach(accordion => {
         accordion.querySelector('.accordion-outer').addEventListener('click', (e) => {
-            accordion.querySelector('.accordion-inner').classList.toggle('hidden');
+            var inner = accordion.querySelector('.accordion-inner');
+            inner.classList.toggle('hidden');
             console.log(accordion.querySelector('.accordion-inner'));
         });
     });

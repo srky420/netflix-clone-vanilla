@@ -124,6 +124,7 @@
 
 .faq-section .heading {
     align-self: center;
+    margin-bottom: 1rem;
 }
 
 .accordion {
@@ -131,6 +132,7 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 0.5rem;
+    transition: all 0.15s ease-in-out;
 }
 
 .accordion-outer {
@@ -148,8 +150,10 @@
 
 .accordion-inner {
     background-color: rgb(40, 40, 40);
-    padding: 1.5rem;
     height: fit-content;
+    max-height: 300px;
+    overflow-y: visible;
+    transition: max-height 0.2s ease-out;
 }
 
 /* Global */
@@ -191,8 +195,8 @@
 }
 
 .hidden {
-    height: 0;
-    display: none;
+    max-height: 0;
+    overflow-y: hidden;
 }
 
 /* Media Query */
