@@ -180,6 +180,23 @@
     overflow: hidden;
 }
 
+/* Footer */
+
+footer {
+    margin: 5rem 0;
+}
+
+.footer-grid {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.footer-grid li {
+    list-style: none;
+}
+
 /* Global */
 
 .btn {
@@ -210,6 +227,15 @@
     font-size: 25px;
     margin: 0 5px;
     width: 225px;
+}
+
+.link {
+    text-decoration: underline;
+    color: rgb(160, 160, 160);
+}
+
+.link:hover {
+    cursor: pointer;
 }
 
 .hidden {
