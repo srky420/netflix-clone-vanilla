@@ -67,6 +67,13 @@
     font-size: 16px;
 }
 
+.form-group {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .field {
     position: relative;
 }
@@ -108,10 +115,21 @@
 }
 
 .section-reverse {
-    padding: 5rem 5rem;
+    padding: 5rem;
     justify-content: left;
 }
 
+.text-hidden {
+    display: none;
+}
+
+.text-visible {
+    display: block;
+}
+
+.section-img > img {
+    width: 600px;
+}
 
 /* FAQ Section */
 
@@ -187,17 +205,11 @@
     filter: drop-shadow(0 1px 1px black);
 }
 
-.form-group {
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .btn-lg {
     padding: 15px 25px;
     font-size: 25px;
     margin: 0 5px;
+    width: 225px;
 }
 
 .hidden {
@@ -218,5 +230,65 @@
 
     .btn {
         font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .section {
+        margin: 0 1.5rem;
+    }
+
+    .faq-section {
+        margin: 0 1.5rem;
+    }
+
+    .nav {
+        margin: 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .para {
+        font-size: 20px;
+    }
+
+    .text-hidden {
+        display: block;
+    }
+
+    .text-visible {
+        display: none;
+    }
+
+    .section-reverse {
+        padding: 0;
+    }
+
+    .break {
+        display: none;
+    }
+
+    .section-img > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-field {
+        resize: horizontal;
     }
 }
