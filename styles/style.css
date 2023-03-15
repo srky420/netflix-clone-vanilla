@@ -80,6 +80,7 @@
     justify-content: center;
     align-items: center;
     width: 60%;
+    align-self: center;
 }
 
 .field {
@@ -101,6 +102,10 @@
 .placeholder-sm {
     font-size: 12px;
     top: 25%;
+}
+
+.field-label {
+    text-align: center;
 }
 
 .line-break {
@@ -295,6 +300,7 @@ footer {
 
     .heading {
         font-size: 35px;
+        text-align: center;
     }
 
     .para {
@@ -310,7 +316,7 @@ footer {
     }
 
     .section-reverse {
-        padding: 0;
+        padding: 1.5rem 0;
     }
 
     .break {
@@ -328,6 +334,7 @@ footer {
 
     .form-group {
         flex-direction: column;
+        width: 80%;
     }
 
     .form-group > * {
@@ -337,6 +344,7 @@ footer {
     .btn-lg {
         font-size: 20px;
         font-weight: normal;
+        width: 200px;
     }
     
 }
