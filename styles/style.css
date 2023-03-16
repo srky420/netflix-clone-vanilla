@@ -176,7 +176,7 @@
     background-color: rgb(40, 40, 40);
     padding: 1.5rem;
     height: fit-content;
-    max-height: 300px;
+    max-height: 1000px;
     transition: max-height 0.2s ease-out, padding 0.2s ease-out;
 }
 
@@ -319,10 +319,11 @@ footer {
 
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 690px) {
 
     .form-group {
         flex-direction: column;
+        width: 100%;
     }
 
     .form-group > * {
@@ -332,6 +333,14 @@ footer {
     .btn-lg {
         font-size: 20px;
         font-weight: normal;
+    }
+
+    .field {
+        width: 90%;
+    }
+
+    .text-field {
+        width: 93%;
     }
     
 }
