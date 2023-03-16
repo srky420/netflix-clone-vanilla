@@ -216,7 +216,7 @@ footer {
 
 .dropdown {
     margin: 2rem 0;
-    font-size: 20px;
+    font-size: 16px;
     padding: 0.2rem 1rem;
     border: 1px solid grey;
     border-radius: 4px;
@@ -225,7 +225,7 @@ footer {
 }
 
 .dropdown-option {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 /* Global */
