@@ -62,15 +62,16 @@
     border: 1px solid grey;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    width: 25rem;
+    width: 100%;
     font-size: 16px;
 }
 
 .btn-lg {
-    padding: 15px 25px;
-    font-size: 25px;
-    margin: 0 5px;
-    width: 225px;
+    width: 300px;
+    padding: 1rem;   
+    font-size: 23px; 
+    margin-left: 0.5rem;
+    font-weight: lighter;
 }
 
 .form-group {
@@ -78,15 +79,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 60%;
+    align-self: center;
 }
 
 .field {
     position: relative;
+    display: flex;
+    width: 25rem;
+    width: 100%;
 }
 
 .placeholder {
     position: absolute;
-    left: 6%;
+    left: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
     transition: all 0.2s ease-out;
@@ -96,6 +102,10 @@
 .placeholder-sm {
     font-size: 12px;
     top: 25%;
+}
+
+.field-label {
+    text-align: center;
 }
 
 .line-break {
@@ -201,6 +211,21 @@ footer {
 
 .footer-grid li {
     list-style: none;
+    font-size: 14px;
+}
+
+.dropdown {
+    margin: 2rem 0;
+    font-size: 20px;
+    padding: 0.2rem 1rem;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255, 0.1);
+    font-weight: 100;
+}
+
+.dropdown-option {
+    font-size: 20px;
 }
 
 /* Global */
@@ -273,7 +298,11 @@ footer {
     }
 
     .nav {
-        margin: 0 1.5rem;
+        margin: 0;
+    }
+
+    .nav-btn {
+        margin-right: 1rem;
     }
 
     footer {
@@ -283,6 +312,10 @@ footer {
 
 @media screen and (max-width: 960px) {
 
+    .banner-text .heading {
+        margin: 0 1rem;
+    }
+
     .section {
         flex-direction: column;
         text-align: center;
@@ -290,6 +323,7 @@ footer {
 
     .heading {
         font-size: 35px;
+        text-align: center;
     }
 
     .para {
@@ -305,7 +339,7 @@ footer {
     }
 
     .section-reverse {
-        padding: 0;
+        padding: 1.5rem 0;
     }
 
     .break {
@@ -317,13 +351,17 @@ footer {
         height: auto;
     }
 
+    .field-label {
+        font-size: 16px;
+    }
+
 }
 
 @media screen and (max-width: 690px) {
 
     .form-group {
         flex-direction: column;
-        width: 100%;
+        width: 80%;
     }
 
     .form-group > * {
@@ -333,14 +371,7 @@ footer {
     .btn-lg {
         font-size: 20px;
         font-weight: normal;
-    }
-
-    .field {
-        width: 90%;
-    }
-
-    .text-field {
-        width: 93%;
+        width: 200px;
     }
     
 }
