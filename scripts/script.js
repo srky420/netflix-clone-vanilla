@@ -26,6 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
             var inner = accordion.querySelector('.accordion-inner');
             var svgs = accordion.querySelector('.accordion-outer').querySelectorAll('svg');
 
+            accordions.forEach((item) => {
+                if (item !== accordion) {
+                    item.querySelector('.accordion-inner').classList.add('accordion-hidden');
+                }
+            });
+
             svgs.forEach(svg => {
                 svg.classList.toggle('hidden');
             });
