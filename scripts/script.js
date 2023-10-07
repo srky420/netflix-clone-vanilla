@@ -29,12 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
             accordions.forEach((item) => {
                 if (item !== accordion) {
                     item.querySelector('.accordion-inner').classList.add('accordion-hidden');
+                    item.querySelector('.accordion-outer').querySelector('.minus').classList.add('hidden');
+                    item.querySelector('.accordion-outer').querySelector('.plus').classList.remove('hidden');
                 }
             });
 
-            svgs.forEach(svg => {
-                svg.classList.toggle('hidden');
-            });
+            accordion.querySelector('.accordion-outer').querySelector('.minus').classList.toggle('hidden');
+            accordion.querySelector('.accordion-outer').querySelector('.plus').classList.toggle('hidden');
 
             inner.classList.toggle('accordion-hidden');
         });
